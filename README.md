@@ -1,6 +1,6 @@
 README in [English](https://github.com/Petingo/hexo-theme-apollo/blob/master/README.md) / [中文](https://github.com/Petingo/hexo-theme-apollo/blob/master/README.zh-TW.md)
 # Introduction
-This is a theme for Hexo based on [hexo-theme-apollo](https://github.com/pinggod/hexo-theme-apollo) and [this fork](https://github.com/angelen10/hexo-theme-apollo), compare to the original theme, it comes with these features:
+This is a theme for Hexo based on [hexo-theme-apollo](https://github.com/pinggod/hexo-theme-apollo) and [this fork](https://github.com/angelen10/hexo-theme-apollo).  Compare to the original theme, it comes with these features:
 - gallery page produced by [unitegallery](https://github.com/vvvmax/unitegallery)
 - tag
 - different font size from h2 to h5
