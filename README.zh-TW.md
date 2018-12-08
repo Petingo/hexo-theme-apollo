@@ -1,23 +1,40 @@
-![hexo-theme-apollo](https://cloud.githubusercontent.com/assets/9530963/13026956/08e76eca-d277-11e5-8bfc-2e80cea20a0d.png)
+Read this document in [English](https://github.com/Petingo/hexo-theme-apollo/blob/master/README.md) / [中文](https://github.com/Petingo/hexo-theme-apollo/blob/master/README.zh-TW.md)
+# 簡介
+一個基於 [hexo-theme-apollo](https://github.com/pinggod/hexo-theme-apollo) 和 [這個 fork](https://github.com/angelen10/hexo-theme-apollo) 的 hexo 主題，與原始的 apollo 相比有這些改動：
+- 相簿頁面
+- 文章標籤
+- h2 到 h5 的字體大小不同
+- 移除了副標題前面的 '#'
+- 一些排版和顏色
+
+## 截圖
+![main-page](https://github.com/Petingo/hexo-theme-apollo/blob/master/screenshot/main-page.png?raw=true)
+![gallery](https://github.com/Petingo/hexo-theme-apollo/blob/master/screenshot/gallery.png?raw=true)
 
 ## Install
 
+#### Initialize Blog & download theme
 ``` bash
 hexo init Blog 
 cd Blog 
 npm install
 npm install --save hexo-renderer-jade hexo-generator-feed hexo-generator-sitemap hexo-browsersync hexo-generator-archive
-git clone https://github.com/pinggod/hexo-theme-apollo.git themes/apollo
+git clone https://github.com/Petingo/hexo-theme-apollo.git themes/apollo
 ```
 
-## Enable
+#### Clean something useless
+``` bash
+rm -rf themes/landscape
+rm -rf themes/apollo/screenshot
+```
 
-Go to `_config.yml` and change the `theme` property to `apollo` value:
-
+#### Change theme
+in `config.yml`:
 ```yaml
 theme: apollo
 
-# Show all posts in archive page using hexo-generator-archive
+# show all articles in achieve page
+# need to install hexo-generator-archive
 archive_generator:
     per_page: 0
     yearly: false
@@ -25,14 +42,42 @@ archive_generator:
     daily: false
 ```
 
-## Update
-
+## Create gallery page
 ``` bash
-cd themes/apollo 
-git pull
+hexo new page gallery
+```
+Change `/source/gallery/index.md` to
+```
+---
+layout: gallery
+---
+```
+Go to flick and apply for an API-Key, create an photoset, and set the config in `theme/_config.yml`.
+
+When setting `random` to `true`, the order of the photos will be different everytime you visit the gallery page.
+```yml
+user_id: xxxxxxxxx@xxx
+api_key: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+photoset_id: 'xxxxxxxxxxxxxxxxx'
+random: false
 ```
 
-## Meta Description
+## Create About Page
+``` bash
+hexo new page about
+```
+Change `/source/gallery/about.md` to
+```
+---
+layout: about
+---
+
+And things you write here will be shown below the personal infomation block.
+```
+Change the link of the buttons in `/theme/layout/partial/about.jade/`
+
+## Other Features
+### Meta Description
 
 If you want to set meta description information, please set `desc` property and value to each post — the better method is setting default `desc` property to your scaffolds files, just like:
 
@@ -53,21 +98,13 @@ result:
 
 If there is no `desc` property or value, hexo-theme-apollo will use `page.title` and `page.author` instead of it. 
 
-## H1~H6 Title
-
-In fact, Hexo-theme-apollo only supoort two kinds of titles: h1~h3 belongs to what i called `big title`, and h4~h6 belongs to `small title`, this means that `#` and `###` have the same styles。
-
-Why i do this? I support that an article should be short and clean, dont let visitors spend much time to recognise the blog post structure.
-
-Another reason is that: i don't have met a great styles to distinguish between different kinds of headers.If you have gread idea about it, please let me know.
-
 ## post excerpt
 
 If you want to show excerpt(core content of article) to your visitors, do add HTML comment tag `<!--more-->` before else content，and finally the tag will be parsed to be a variable which represents post excerpt by Hexo:
 
 ![https://cloud.githubusercontent.com/assets/9530963/14064341/0fa3c754-f432-11e5-8ad7-5d063d4a0886.png](https://cloud.githubusercontent.com/assets/9530963/14064341/0fa3c754-f432-11e5-8ad7-5d063d4a0886.png)
 
-## Comment Plugin
+### Comment Plugin
 
 Hexo-theme-apollo support two comment plugins: Disqus and Duoshuo. please set like this in your `themes/apollo/_config.yml`:
 
@@ -75,7 +112,7 @@ Hexo-theme-apollo support two comment plugins: Disqus and Duoshuo. please set li
 disqus: seansun
 ```
 
-## Danger Block
+### Danger Block
 
 Use html tag with special class property to render block:
 
@@ -87,10 +124,5 @@ Use html tag with special class property to render block:
 
 ![danger](https://cloud.githubusercontent.com/assets/9530963/11359678/489a510c-92b9-11e5-9256-341cef6999b6.png)
 
-## Legends
-
-This may lead to disappointed: i don't have spacial tool to create diagrams，but just Microsoft Powerpoint。
-
 ## Last but not Least
-
 Focus on blog posts, not blog's styles. Have fun :) !
