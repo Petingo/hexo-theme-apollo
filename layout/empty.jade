@@ -1,0 +1,15 @@
+doctype
+html(lang=config.language)
+    head
+        include partial/head
+    body
+        .wrap
+            main.container
+                include mixins/post
+                +empty(page)
+        include partial/scripts
+    
+
+block pagination
+    include mixins/paginator
+    +post()

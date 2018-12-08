@@ -3,6 +3,7 @@ Read this document in [English](https://github.com/Petingo/hexo-theme-apollo/blo
 一個基於 [hexo-theme-apollo](https://github.com/pinggod/hexo-theme-apollo) 和 [這個 fork](https://github.com/angelen10/hexo-theme-apollo) 的 hexo 主題，與原始的 apollo 相比有這些改動：
 - 相簿頁面
 - 文章標籤
+- 空的頁面 layout
 - h2 到 h5 的字體大小不同
 - 移除了副標題前面的 '#'
 - 一些排版和顏色
@@ -75,7 +76,15 @@ layout: about
 And things you write here will be shown below the personal infomation block.
 ```
 Change the link of the buttons in `/theme/layout/partial/about.jade`
-
+## Empty Page
+You can create an empty page which contains nothing but the markdown file.  Just create a new page and set `layout` to `empty`.
+An example is https://petingo.me/cp/.
+```
+---
+title: 
+layout: empty
+---
+```
 ## Other Features
 ### Meta Description
 
@@ -126,3 +135,5 @@ Use html tag with special class property to render block:
 
 ## Last but not Least
 Focus on blog posts, not blog's styles. Have fun :) !
+
+## 

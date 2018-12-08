@@ -3,6 +3,7 @@ README in [English](https://github.com/Petingo/hexo-theme-apollo/blob/master/REA
 This is a theme for Hexo based on [hexo-theme-apollo](https://github.com/pinggod/hexo-theme-apollo) and [this fork](https://github.com/angelen10/hexo-theme-apollo).  Compare to the original theme, it comes with these features:
 - gallery page produced by [unitegallery](https://github.com/vvvmax/unitegallery)
 - tag
+- empty page layout
 - different font size from h2 to h5
 - remove '#' in front of subtitle
 - slight change on layout & color
@@ -14,7 +15,7 @@ You can visit [my blog](petingo.me) to see how it works.
 
 ## Install
 
-#### Initialize Blog & download theme
+#### Initialize blog & download theme
 ``` bash
 hexo init Blog 
 cd Blog 
@@ -77,6 +78,15 @@ And things you write here will be shown below the personal infomation block.
 ```
 Change the link of the buttons in `/theme/layout/partial/about.jade/`
 
+## Empty Page
+You can create an empty page which contains nothing but the markdown file.  Just create a new page and set `layout` to `empty`.
+An example is https://petingo.me/cp/.
+```
+---
+title: 
+layout: empty
+---
+```
 ## Other Features
 ### Meta Description
 
@@ -127,3 +137,5 @@ Use html tag with special class property to render block:
 
 ## Last but not Least
 Focus on blog posts, not blog's styles. Have fun :) !
+
+## 
