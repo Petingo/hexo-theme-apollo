@@ -1,21 +1,27 @@
 menu:
     Blog: /
     Archive: /archives/
-    Weibo: http://weibo.com/sunchongsheng
-    GitHub: https://github.com/pinggod
-    Rss: /atom.xml
+    Gallery: /gallery/
+    About: /about/
 
 favicon: /favicon.png
 logo: /favicon.png
 
+# gallery
+source: flickr
+user_id: xxxxxxxxx@Xxx
+api_key: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+photoset_id: 'xxxxxxxxxxxxxxxxx'
+random: true
+
 # Comment
 # e.g disqus: seansun
-disqus:
+disqus: 
 duoshuo:
 
 # Analytics
-# google-analytics:
-# ga: UA-xxxxxxxx-x
+google-analytics:
+ga: UA-xxxxxxxxx-1
 
 # Copyright Infomation
-startyear: 2015
+startyear: 2018

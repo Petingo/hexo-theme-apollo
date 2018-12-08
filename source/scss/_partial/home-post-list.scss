@@ -7,6 +7,7 @@
             border-bottom: 0px;
         }
     }
+    
     .post-content{
         h2, h3, h4, h5, h6 {
             &:before {
@@ -19,5 +20,9 @@
     }
     .read-more {     
         color: #42b983;
+    }
+    .read-more:active,
+    .read-more:hover {
+        color:  #267B54;
     }
 }
