@@ -11,7 +11,7 @@ logo: /favicon.png
 user_id: 160709463@N02
 api_key: 73bc2a511af797e2a6909f64e00653ec
 photoset_id: '72157693734070482'
-random: true
+random: false
 
 # Comment
 # e.g disqus: seansun
