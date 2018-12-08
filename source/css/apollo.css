@@ -395,7 +395,7 @@ th {
 
 ::selection {
   color: #FFFFFF;
-  background-color: #42b983;
+  background-color: #009393;
 }
 
 html, body {
@@ -431,7 +431,7 @@ a, a:active {
 a.nav-list-link.active,
 a.nav-list-link:hover,
 a.post-title-link:hover {
-  border-bottom: 2px solid #42b983;
+  border-bottom: 2px solid #009393;
 }
 
 hr {
@@ -510,11 +510,11 @@ header .nav-list-item a {
   list-style: initial;
 }
 .home.post-list .read-more {
-  color: #42b983;
+  color: #009393;
 }
 .home.post-list .read-more:active,
 .home.post-list .read-more:hover {
-  color: #267B54;
+  color: #006F6F;
 }
 
 .archive {
@@ -531,12 +531,12 @@ header .nav-list-item a {
 .archive .post-title-link {
   display: block;
   margin-left: 125px;
-  color: #42b983;
+  color: #009393;
   word-break: break-all;
 }
 .archive .post-title-link:hover {
   border-bottom: 0;
-  color: #267B54;
+  color: #006F6F;
 }
 .archive .post-info {
   float: left;
@@ -570,12 +570,12 @@ header .nav-list-item a {
 }
 .post-block .tag-title {
   font-size: 1em;
-  color: #42b983;
+  color: #009393;
   padding-right: 10px;
 }
 .post-block .tag-title:active,
 .post-block .tag-title:hover {
-  color: #267B54;
+  color: #006F6F;
 }
 
 .post-content h2 {
@@ -591,16 +591,16 @@ header .nav-list-item a {
   font-size: 16px;
 }
 .post-content a {
-  color: #42b983;
+  color: #009393;
   word-break: break-all;
 }
 .post-content a:active, .post-content a:hover {
-  color: #267B54;
+  color: #006F6F;
 }
 .post-content blockquote {
   margin: 2em 0;
   padding-left: 20px;
-  border-left: 4px solid #42b983;
+  border-left: 4px solid #009393;
 }
 .post-content img {
   display: block;
@@ -805,7 +805,7 @@ pre .symbol,
 pre .symbol .string,
 pre .value,
 pre .regexp {
-  color: #42b983;
+  color: #009393;
 }
 pre .title {
   color: #83B917;
@@ -834,7 +834,7 @@ pre .apache .tag,
 pre .apache .cbracket,
 pre .tex .command,
 pre .prompt {
-  color: #42b983;
+  color: #009393;
 }
 pre .comment,
 pre .java .annotation,
@@ -869,13 +869,13 @@ pre .xml .cdata {
   margin: 0 4px;
   padding: 4px 12px;
   border-radius: 4px;
-  border-bottom: 4px solid #3aa373;
+  border-bottom: 4px solid #007575;
   font-size: 14px;
   color: #fff;
-  background-color: #4fc08d;
+  background-color: #00a3a3;
 }
 .paginator .prev:hover, .paginator .next:hover {
-  background-color: #22bd77;
+  background-color: #009292;
 }
 
 .ds-thread,

@@ -27,13 +27,13 @@
 
     .tag-title {
         font-size: 1em;
-        color: #42b983;
-        padding-right: 10px
+        color: #009393;
+        padding-right: 10px;
+        &:hover {
+            color:  #006F6F;
+        }
     }
-    .tag-title:active,
-    .tag-title:hover {
-    color:  #267B54;
-    }
+    
 }
 
 .post-content {
@@ -50,16 +50,16 @@
         font-size: 16px;
     }
     a {
-        color: #42b983;
+        color: #009393;
         word-break: break-all;
     }
     a:active, a:hover{
-        color:  #267B54;
+        color:  #006F6F;
     }
     blockquote {
         margin: 2em 0;
         padding-left: 20px;
-        border-left: 4px solid #42b983;
+        border-left: 4px solid #009393;
     }
     img {
         display: block;
@@ -205,7 +205,7 @@ pre {
     .symbol .string,
     .value,
     .regexp {
-        color: #42b983;
+        color: #009393;
     }
     .title {
         color: #83B917;
@@ -234,7 +234,7 @@ pre {
     .apache .cbracket,
     .tex .command,
     .prompt {
-        color: #42b983;
+        color: #009393;
     }
     .comment,
     .java .annotation,
