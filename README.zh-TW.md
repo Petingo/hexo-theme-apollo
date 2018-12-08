@@ -52,9 +52,9 @@ Change `/source/gallery/index.md` to
 layout: gallery
 ---
 ```
-Go to flick and apply for an API-Key, create an photoset, and set the config in `theme/_config.yml`.
+Go to flick and apply for an API-Key, create an photoset, and modify the config in `theme/_config.yml`.
 
-When setting `random` to `true`, the order of the photos will be different everytime you visit the gallery page.
+If `random` is set as `true`, the order of the photos will be different everytime you visit the gallery page.
 ```yml
 user_id: xxxxxxxxx@xxx
 api_key: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
@@ -74,7 +74,7 @@ layout: about
 
 And things you write here will be shown below the personal infomation block.
 ```
-Change the link of the buttons in `/theme/layout/partial/about.jade/`
+Change the link of the buttons in `/theme/layout/partial/about.jade`
 
 ## Other Features
 ### Meta Description
