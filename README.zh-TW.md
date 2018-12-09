@@ -2,13 +2,13 @@ Read this document in [English](https://github.com/Petingo/hexo-theme-apollo/blo
 # 簡介
 一個基於 [hexo-theme-apollo](https://github.com/pinggod/hexo-theme-apollo) 和 [這個 fork](https://github.com/angelen10/hexo-theme-apollo) 的 hexo 主題，與原始的 apollo 相比有這些改動：
 - 相簿頁面
-- 文章標籤
-- 空的頁面 layout
+- 文章標籤
+- 空的頁面 layout
 - h2 到 h5 的字體大小不同
 - 移除了副標題前面的 '#'
-- 一些排版和顏色
+- 一些排版和顏色
 
-## 截圖
+## 截圖
 ![main-page](https://github.com/Petingo/hexo-theme-apollo/blob/master/screenshot/main-page.png?raw=true)
 ![gallery](https://github.com/Petingo/hexo-theme-apollo/blob/master/screenshot/gallery.png?raw=true)
 
