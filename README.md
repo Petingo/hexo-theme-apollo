@@ -43,6 +43,14 @@ archive_generator:
     monthly: false
     daily: false
 ```
+#### Latex
+If you need $\LaTeX$ in your blog, you may have to chane the markdown render engine to [hexo-renderer-markdown-it-plus](https://github.com/CHENXCHEN/hexo-renderer-markdown-it-plus) or the inline LaTeX `$..$` may not be rendered properly.
+The KaTeX css style has been added to the theme, just run
+```
+npm un hexo-renderer-marked --save
+npm i hexo-renderer-markdown-it-plus --save
+```
+For more infomation, check out their [github repo page](https://github.com/CHENXCHEN/hexo-renderer-markdown-it-plus).
 
 ## Create gallery page
 ``` bash
